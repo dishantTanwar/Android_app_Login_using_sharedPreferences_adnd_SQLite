@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/good_night_img"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/nestedScrollView"
+    android:padding="16dp"
+    tools:context="com.activities.LoginActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_time_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Good Morning"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:textColor="#FFFFFFFF"
+        android:fontFamily="sans-serif-condensed-medium"
+        />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/textViewLinkRegister"
+            android:orientation="vertical"
+            android:layout_marginTop="80dp"
+            android:layout_marginHorizontal="35dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#FFF"
+            android:layout_marginTop="40dp" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/myEditTextStyle"
+                android:drawableEnd="@drawable/ic_email_white_24dp"
+                android:hint="@string/hint_email"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/colorText"
+                android:drawableRight="@drawable/ic_email_white_24dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#FFF"
+            android:layout_marginTop="20dp" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/myEditTextStyle"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:drawableEnd="@drawable/ic_lock_white_24dp"
+                android:maxLines="1"
+                android:textColor="@color/colorText"
+                android:drawableRight="@drawable/ic_lock_white_24dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButtonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorText"
+            android:background="@drawable/bg_button_white"
+            android:text="@string/text_login" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLinkRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/text_not_member"
+            android:textSize="16sp"
+            android:textColor="@color/colorText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Forgot password?"
+            android:textSize="16sp"
+            android:textColor="@color/colorText" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>
